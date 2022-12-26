@@ -4,7 +4,10 @@ const Navbar = (props) => {
 	const { username } = props;
 
 	return (
-		<div id="navbar-container" name="navbar-container" className="fixed top-0 z-20 w-full text-white bg-hero-pattern">
+		<div
+			id="navbar-container"
+			name="navbar-container"
+			className="fixed top-0 z-20 w-full text-white bg-gradient-to-b from-black to-transparent">
 			<div name="wrapper" className="flex w-full p-5 px-4">
 				<a name="logo-link" href="./" className="flex text-base font-medium align-center">
 					<div name="logo-wrapper" className="flex w-32 px-1 text-red-600">
