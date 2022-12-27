@@ -1,4 +1,3 @@
-import "./navbar.module.css";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
@@ -61,7 +60,7 @@ const Navbar = (props) => {
 						{showDropdown && (
 							<div
 								name="nav-dropdown"
-								className="absolute p-2 ml-auto text-white border border-blue-900 rounded cursor-pointer bg-black/50">
+								className="p-2 ml-auto text-white border border-blue-900 rounded cursor-pointer bg-black/50">
 								<Link href="/login">Sign Out</Link>
 								<div name="line-wrapper" className=""></div>
 							</div>

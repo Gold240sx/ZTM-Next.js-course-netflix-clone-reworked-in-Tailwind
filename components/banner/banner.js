@@ -8,11 +8,17 @@ const Banner = (props) => {
 	const handleOnPlay = () => {};
 
 	return (
-		<div name="container" className="w-full  relative max-h-[80vh] aspect-[4/2.5] ">
-			<div name="leftWrapper" className="absolute z-10 w-full h-full">
-				<div name="left" className="flex flex-col justify-start h-full px-16 mt-24">
+		<div name="container" className="w-full  relative max-h-[80vh] aspect-[4/2.5] overflow-hidden">
+			<Image
+				name="bannerImg"
+				src={cliffordPic}
+				alt="Banner Image"
+				className="absolute z-0 w-full h-auto bg-center bg-cover bannerImg"
+			/>
+			<div name="leftWrapper" className="z-10 w-full h-full ">
+				<div name="left" className="absolute flex flex-col justify-start h-auto px-16 mt-24">
 					<div name="nSeriesWrapper" className="flex flex-row justify-start w-full">
-						<p name="firstLetter" className="text-5xl text-red-700">
+						<p name="firstLetter" className="text-5xl text-red-600 scale-x-75 text-bold">
 							N
 						</p>
 						<p name="series" className="leading-[3rem] text-center text-gray-500 align-middle">
@@ -50,12 +56,6 @@ const Banner = (props) => {
 					</div>
 				</div>
 			</div>
-			<Image
-				name="bannerImg"
-				src={cliffordPic}
-				alt="Banner Image"
-				className="absolute z-0 w-full h-auto bg-center bg-cover bannerImg"
-			/>
 		</div>
 	);
 };
