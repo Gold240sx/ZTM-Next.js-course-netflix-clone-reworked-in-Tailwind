@@ -14,7 +14,9 @@ export default function Home() {
 
 			<Navbar username="michael@directmailcompany.com" />
 			<Banner title="Clifford the big red dog" subtitle="a very cute dog" imgUrl="../public/static/images/clifford.jpg" />
-			<SectionCards title="Disney" />
+			<div id="sectionWrapper" className="mt-6">
+				<SectionCards title="Disney" />
+			</div>
 			<section name="card-section" className="relative "></section>
 		</div>
 	);

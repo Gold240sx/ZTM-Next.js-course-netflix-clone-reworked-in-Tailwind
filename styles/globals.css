@@ -38,11 +38,16 @@
 
 	h2 {
 		font-weight: 700;
+        height: fit-content;
 	}
 
 	button {
 		color: var(--white10);
 	}
+
+    .wrap {
+        flex-wrap: wrap;
+    }
 
 	/* TEXT STROKE */
 
@@ -211,6 +216,18 @@
 --blue20: rgb(55, 65, 81);
 /* slate700 */
 /* }  */
+
+@layer components {
+    .cardWrapper {
+        display: flex;
+        padding-top: 1.7rem;
+        padding-bottom: 1.5rem;
+        margin-top: 1.5rem;
+        margin-right: 0.75rem;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
 
 @layer utilities {
 	* {

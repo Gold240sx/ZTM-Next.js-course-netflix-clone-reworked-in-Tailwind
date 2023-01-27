@@ -1,7 +1,11 @@
 import Image from "next/image";
 import cliffordPic from "../../public/static/images/clifford.webp";
 import "./banner.module.css";
-import playIcon from "../../public/static/icons/playArrow.svg";
+// import playIcon from "../../public/static/icons/playArrow.svg";
+import playIcon from "../../public/static/icons/playicon.png";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faPlay } from "@fortawesome/free-solid-svg-icons";
+// import { solid, regular, brands, icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const Banner = (props) => {
 	const { title, subtitle, imgUrl } = props;
@@ -33,8 +37,12 @@ const Banner = (props) => {
 					</h3>
 					<div
 						name="playBtnWrapper"
-						className="flex flex-row my-4 text-center bg-white rounded-md cursor-pointer py-none w-fit justify-items-center px-7 h-fit hover:bg-slate-200 hover:text-slate-700 text-semibold">
-						<Image name="playIcon" src={playIcon} alt="Play Icon" className="w-8 h-fit" />
+						className="flex flex-row p-2 my-4 text-center bg-white rounded-md cursor-pointer py-none w-fit justify-items-center px-7 h-fit hover:bg-slate-200 hover:text-slate-700 text-semibold">
+						<Image name="playIcon" src={playIcon} alt="Play Icon" className="w-6 mr-2 opacity-30 h-fit" />
+						{/* <i className="fas fa-play" className="w-4 h-4 text-slate-400 fill-slate-400"></i> */}
+						{/* <FontAwesomeIcon icon="fa-solid fa-play" className="w-4 h-4 text-slate-400 fill-slate-400" /> */}
+						{/* <img href={faPlay} height="20px" width="20px" color="black" style={{ color: "black", fill: "black " }} /> */}
+						{/* {faPlay} */}
 						<button
 							name="btnWithIcon"
 							onClick={() => handleOnPlay()}
